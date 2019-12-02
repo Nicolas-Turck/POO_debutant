@@ -1,4 +1,3 @@
-# coding: utf8
 
 from book import Book
 from reader import Reader

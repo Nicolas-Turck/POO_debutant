@@ -12,12 +12,11 @@ class Reader():
     def borrow_book(self, Library, title):
         """method for verify is title si in list book 
         and got to method get book in class Library"""
-        #Library.get_book(self, title)
         self.book=Library.get_book(title)
-        #self.book =Library.get_book(book)
         if self.book is None:
             try:
                 pass
+                
             except book_error as identifier:
                 pass
             else:
@@ -53,7 +52,8 @@ class Reader():
     def read_book(self):
         """method for book is open while the book is not finish"""
         while self.current_pages != len(self.book.pages):
-            pass
+            self.current_pages += 1
+            print("read")
         else:
-            print("you finsh the book ")
+            print("you finish the book ")
         
